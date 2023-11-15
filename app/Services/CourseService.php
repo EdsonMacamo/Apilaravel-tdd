@@ -21,6 +21,13 @@ class CourseService
       {
          return  $this->repository->createNewCourse($data);
       }
+
+      public function getCourse(string $identify)
+      {
+         return  $this->repository->getCurseByUuid($identify);
+      }
+
+
 }
 
 
